@@ -12,7 +12,7 @@ House rules
 
 Checks before every commit
 - Syntax check: awk '/<script>/{f=1;next}/<\/script>/{f=0}f' index.html > /tmp/s.js && node --check /tmp/s.js
-- Em dash check: grep -c $'—' index.html must print 0
+- Em dash check: grep -c $'\u2014' index.html must print 0
 - Counts load as 44 bottles, 84 formulas, 11 trios, 34 with occasion notes
 
 Notes
